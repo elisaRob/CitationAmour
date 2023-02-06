@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster+Two:ital@1&display=swap');
+
+*,:before,:after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Lobster Two', cursive;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height: 100vh;
+    overflow:hidden;
+    flex-direction: column;
+    font-size:calc(3vmin+10px);
+    /* background-color: pink; */
+    background-image: url("img/fontEcran.jpg");
+}
+
+h1{
+    font-size:3em;
+    color:azure;
+    margin-bottom:2px;
+}
+
+.container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100vh;
+    
+}
+
+.citation{
+    color:azure;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image{
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius:50px;
+    flex:0.8;
+    margin:5px;
+    opacity:0.8;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2em;
+    
+}
+
+
+
+.image:hover{
+    cursor:pointer;
+}
+
+span{
+    display:block;
+    margin-top:5px;
+}
+
+.citation{
+   
+  
+   width:100%;
+   display:none;
+
+}
+
+.image.active{
+    flex:10;
+
+}
+
+.image.active .citation{
+    display:flex;
+}
+
+.image1{
+    background-image: url("img/amour1.jpg");
+}
+
+.image2{
+    background-image:url("img/amour2.jpg") ;
+}
+
+.image3{
+    background-image: url("img/amour3.jpg");
+}
+
+.image4{
+    background-image: url("img/amour4.jpg");
+}
+
+.image5{
+    background-image: url("img/amour5.jpg");
+}
+
+@media screen and (max-width:981px){
+    .container{
+        width:80vh;
+    }
+}
+
+@media screen and (max-width:776px){
+    .container{
+        width:60vh;
+    }
+    .image{
+        flex:1.3;
+    }
+    .citation{
+        width: 80%; 
+        margin: 0 auto; 
+        text-align: center; 
+    }
+}
+
+/* @media screen and (max-width:589px){
+    .container{
+        width:40vh;
+    }
+    .image{
+        flex:2;
+    }
+    p{
+        font-size:0.8em;
+    }
+}
+
+@media screen and (max-width:391px){
+    .container{
+        width:30vh;
+    }
+    .citation{
+        font-size:0.8em;
+    }
+} */
+
+@media screen and (max-width:589px){
+    .container{
+        width:40vh;
+    }
+    .image{
+        flex:2;
+    }
+    p{
+        font-size:0.8em;
+    }
+    .image:nth-child(3),.image:nth-child(4){
+        display:none;
+    }
+}
